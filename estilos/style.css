@@ -23,6 +23,15 @@
   --fundo-card: #ffffff
 }
 
+body.escuro{
+  --fundo-principal:#222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #ff5522; 
+  --destaque-inverso: #a73917;
+  --fundo-card: #444444
+}
+
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
@@ -63,7 +72,7 @@ header{
 
 main{
   display: grid;
-  grid-template-columns: auto 90vw auto;
+  grid-template-columns: auto 80vw auto;
   
 }
 
@@ -262,6 +271,8 @@ footer a:hover{
   
   main{
     grid-template-columns: auto 300px 1fr auto;
+    gap: 20px;
+    margin-top: 20px;
   }
   
   section#ficha{
@@ -292,5 +303,9 @@ footer a:hover{
     aspect-ratio: 1/1;
     max-width: 20%;
     max-height: 200px;
+  }
+
+  .video-container{
+    width: 900px;
   }
 }
